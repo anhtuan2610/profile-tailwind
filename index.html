@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-[#111111] font-syne">
+    <div class="flex max-h-full max-w-full cursor-default">
+      <!-- 2 cái layout fixed (info, nav) -->
+      <div class="flex px-24">
+        <!-- fixed-left (info-card) -->
+        <div
+          class="fixed top-12 flex flex-col justify-center items-center h-[90vh] w-[24.8rem] px-12 pt-12 pb-8 bg-[#161616] box-border border border-[#303033] rounded-[38px]"
+        >
+          <div class="flex gap-4">
+            <div class="w-[24.9%]">
+              <img src="../images/svg-image-1.png" alt="" />
+            </div>
+            <div class="font-bold text-4xl text-[#e9e9f1] pl-2">Tuan AAnh</div>
+          </div>
+          <div class="flex flex-col justify-around h-[calc(100%-78px)]">
+            <div class="border-none">
+              <img
+                class="rounded-[30px] w-full h-auto"
+                src="../images/image-main.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div class="text-[#c7c6d3] text-sm mb-1">Specialization:</div>
+              <div class="text-[#e9e9f1] text-xl font-bold">
+                UI/UX designer<br />
+                and frontend developer
+              </div>
+            </div>
+            <div>
+              <div class="text-[#c7c6d3] text-sm mb-1">Based in:</div>
+              <div class="text-[#e9e9f1] text-xl font-bold leading-6">
+                Hanoi, VietNam
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div
+                class="h-12 w-12 cursor-pointer border border-[#e9e9f1] box-border rounded-[40%] flex justify-center items-center"
+              >
+                <img src="../images/icons8-facebook-24.png" alt="" />
+              </div>
+              <div
+                class="h-12 w-12 cursor-pointer border border-[#e9e9f1] box-border rounded-[40%] flex justify-center items-center"
+              >
+                <img src="../images/icons8-github-25.png" alt="" />
+              </div>
+              <div
+                class="h-12 w-12 cursor-pointer border border-[#e9e9f1] box-border rounded-[40%] flex justify-center items-center"
+              >
+                <img src="../images/icons8-instagram-24.png" alt="" />
+              </div>
+              <div
+                class="h-12 w-12 cursor-pointer border border-[#e9e9f1] box-border rounded-[40%] flex justify-center items-center"
+              >
+                <img src="../images/icons8-pinterest-24.png" alt="" />
+              </div>
+              <div
+                class="h-12 w-12 cursor-pointer border border-[#e9e9f1] box-border rounded-[40%] flex justify-center items-center"
+              >
+                <img src="../images/icons8-twitter-24.png" alt="" />
+              </div>
+            </div>
+            <div>
+              <button
+                class="relative min-h-14 w-full text-center text-xl font-bold cursor-pointer box-border rounded-[26px] bg-gradient-to-r from-[#e4b8bf] to-[#cec4ef] transition-all duration-300 ease-in-out hover:scale-[1.02] overflow-hidden before:content-['Let\'s_Work_Together!'] before:absolute before:w-full before:top-1/2 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:transition-top before:duration-300 before:ease-in-out hover:before:top-[-50%] after:content-['Let\'s_Work_Together!'] after:w-full after:absolute after:top-[150%] after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:transition-top after:duration-300 after:ease-in-out hover:after:top-1/2"
+              ></button>
+            </div>
+          </div>
+        </div>
+        <!-- fixed nav -->
+        <div class="max-w-full">
+          <div
+            class="fixed z-10 w-[73.89%] h-14 top-12 right-0 pl-12 pr-24 flex justify-center items-center"
+          >
+            <div
+              class="h-15 w-full h-auto font-bold text-xl text-[#c7c6d3] flex justify-between box-border"
+            >
+              <div class="flex gap-2">
+                <div
+                  class="rounded-[26px] px-6 flex justify-center items-center backdrop-blur cursor-pointer"
+                >
+                  <a href="#content-page1">Home</a>
+                </div>
+                <div
+                  class="rounded-[26px] px-6 flex justify-center items-center backdrop-blur cursor-pointer"
+                >
+                  <a href="#content-page2">Portfolio</a>
+                </div>
+                <div
+                  class="rounded-[26px] px-6 flex justify-center items-center backdrop-blur cursor-pointer"
+                >
+                  <a href="#content-page3">About Me</a>
+                </div>
+                <div
+                  class="rounded-[26px] px-6 flex justify-center items-center backdrop-blur cursor-pointer"
+                >
+                  <a href="#content-page4">Resume</a>
+                </div>
+                <div
+                  class="rounded-[26px] px-6 flex justify-center items-center backdrop-blur cursor-pointer"
+                >
+                  Contact
+                </div>
+              </div>
+              <div class="flex items-center gap-5">
+                <div class="w-5 h-5 backdrop-blur cursor-pointer">
+                  <img src="../images/icons8-sun-32.png" alt="" />
+                </div>
+                <div
+                  class="flex items-center justify-center gap-1 max-w-[177px] h-14 border rounded-[26px] px-5 text-center box-border bg-[#d3c1e3] text-black cursor-pointer"
+                >
+                  <div>Let's Talk</div>
+                  <img
+                    class="h-5 w-5"
+                    src="../images/icons8-chat-32.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- all page content -->
+      <div id="content-page1" class="pt-[390px] pl-[22.5rem] flex-grow">
+        <!-- page1 -->
+        <div class="flex flex-col gap-4 w-[93.4%] h-auto">
+          <div
+            class="flex w-36 h-10 text-sm font-bold text-[#c7c6d3] border border-[#303033] rounded-[17px] px-4 justify-between items-center"
+          >
+            <img class="w-5" src="./images/icons8-star-24.png" alt="" />
+            <span>Let's meet!</span>
+          </div>
+          <div
+            class="text-transparent bg-clip-text bg-gradient-to-r from-[#e1bac5] via-[#D0C3EC] to-[#D0C3EC] text-[80px] font-bold leading-[96px] max-w-[900px]"
+          >
+            I'm Tuan Anh Digital designer and illustrator.
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <button
+                class="relative flex justify-between items-center min-w-48 h-[3.75rem] px-6 mt-9 border rounded-[1.625rem] text-xl text-white font-bold group overflow-hidden"
+              >
+                <span
+                  class="absolute flex justify-center items-center top-3 group-hover:-top-1/2 transition-all duration-300"
+                >
+                  <span>My Works</span>
+                  <img src="./images/icons8-windows-11-30.png" alt="" />
+                </span>
+                <span
+                  class="absolute flex justify-center items-center top-14 group-hover:top-3 transition-all duration-300"
+                >
+                  <span>My Works</span>
+                  <img src="./images/icons8-windows-11-30.png" alt="" />
+                </span>
+              </button>
+              <button
+                class="relative flex justify-between items-center min-w-48 h-[3.75rem] px-6 mt-9 text-xl text-gray-500 font-bold group overflow-hidden"
+              >
+                <span
+                  class="absolute flex justify-center items-center top-0 group-hover:-top-14 transition-all duration-300"
+                >
+                  <span>Download CV</span>
+                  <img
+                    class="w-8"
+                    src="./images/icons8-download-64.png"
+                    alt=""
+                  />
+                </span>
+                <span
+                  class="absolute flex justify-center items-center top-14 group-hover:top-0 transition-all duration-300"
+                >
+                  <span>Download CV</span>
+                  <img
+                    class="w-8"
+                    src="./images/icons8-download-64.png"
+                    alt=""
+                  />
+                </span>
+              </button>
+            </div>
+            <div class="rotating-btn h-auto text-white">
+              <a
+                href="#content-page2"
+                class="relative inline-flex h-[120px] w-[120px] items-center justify-center text-[2.2rem] text-white"
+              >
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 120 120"
+                  style="
+                    translate: none;
+                    rotate: none;
+                    transform: translate3d(0px, 0px, 0px) rotate(138.547deg);
+                  "
+                  xml:space="preserve"
+                  class="animate-rotation top-0 translate-z-0 absolute left-0 translate-x-0 translate-y-0 rotate-[138.547deg] transform"
+                  data-value="360"
+                >
+                  <defs>
+                    <path
+                      id="textPath"
+                      d="M110,59.5c0,27.6-22.4,50-50,50s-50-22.4-50-50s22.4-50,50-50S110,31.9,110,59.5z"
+                    ></path>
+                  </defs>
+                  <g>
+                    <use xlink:href="#textPath" fill="none"></use>
+                    <text>
+                      <textPath
+                        xlink:href="#textPath"
+                        class="fill-white font-Syne text-[1.2rem] font-bold uppercase tracking-wider text-white"
+                      >
+                        Scroll for More * Scroll for More *
+                      </textPath>
+                    </text>
+                  </g>
+                </svg>
+                <i class="fa-solid fa-arrow-down text-[22px]"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- page2 -->
+        <div id="content-page2" class="max-w-full h-auto pt-44">
+          <div>
+            <div
+              class="flex w-36 h-10 text-base font-bold text-[#c7c6d3] border border-[#303033] rounded-[17px] px-4 justify-between items-center"
+            >
+              <img class="w-5" src="./images/icons8-star-24.png" alt="" />
+              <span>Portfolio</span>
+            </div>
+            <div
+              class="max-w-4xl text-6xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#e1bac5] via-[#D0C3EC] to-[#D0C3EC] py-4"
+            >
+              Check out my featured projects
+            </div>
+            <div class="flex flex-wrap">
+              <div class="w-[46.5%] pr-6 mt-14">
+                <div class="relative">
+                  <img
+                    class="rounded-[38px] -z-10 cursor-pointer hover:scale-[1.02] transition-all duration-300"
+                    src="./images/800_w01-thumb.webp"
+                    alt=""
+                  />
+                  <div>
+                    <span
+                      class="absolute bottom-8 left-7 px-3 py-2 rounded-3xl bg-[#FAFAFA] text-black text-base"
+                      >Illustrations</span
+                    >
+                    <span
+                      class="absolute bottom-8 left-36 px-3 py-2 rounded-3xl bg-[#FAFAFA] text-black text-base"
+                      >8D Render</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="w-[46.5%] pl-6 mt-14">
+                <div class="relative">
+                  <img
+                    class="rounded-[38px] -z-10 cursor-pointer hover:scale-[1.02] transition-all duration-300"
+                    src="./images/800_w02-thumb.webp"
+                    alt=""
+                  />
+                  <div>
+                    <span
+                      class="absolute bottom-8 left-7 px-3 py-2 rounded-3xl bg-[#111111] text-white text-base"
+                      >Illustrations</span
+                    >
+                    <span
+                      class="absolute bottom-8 left-36 px-3 py-2 rounded-3xl bg-[#111111] text-white text-base"
+                      >8D Render</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="w-[46.5%] pr-6 mt-14">
+                <div class="relative">
+                  <img
+                    class="rounded-[38px] -z-10 cursor-pointer hover:scale-[1.02] transition-all duration-300"
+                    src="./images/800_w03-thumb.webp"
+                    alt=""
+                  />
+                  <div>
+                    <span
+                      class="absolute bottom-8 left-7 px-3 py-2 rounded-3xl bg-[#111111] text-white text-base"
+                      >Illustrations</span
+                    >
+                    <span
+                      class="absolute bottom-8 left-36 px-3 py-2 rounded-3xl bg-[#111111] text-white text-base"
+                      >8D Render</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="w-[46.5%] pl-6 mt-14">
+                <div class="relative">
+                  <img
+                    class="rounded-[38px] -z-10 cursor-pointer hover:scale-[1.02] transition-all duration-300"
+                    src="./images/800_w04-thumb.webp"
+                    alt=""
+                  />
+                  <div>
+                    <span
+                      class="absolute bottom-8 left-7 px-3 py-2 rounded-3xl bg-[#FAFAFA] text-black text-base"
+                      >Illustrations</span
+                    >
+                    <span
+                      class="absolute bottom-8 left-36 px-3 py-2 rounded-3xl bg-[#FAFAFA] text-black text-base"
+                      >8D Render</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- page3 -->
+        <div id="content-page3" class="max-w-full h-auto pt-44">
+          <div
+            class="flex w-36 h-10 text-base font-bold text-[#c7c6d3] border border-[#303033] rounded-[17px] px-4 justify-between items-center"
+          >
+            <img class="w-5" src="./images/icons8-star-24.png" alt="" />
+            <span>About me</span>
+          </div>
+          <div
+            class="text-transparent bg-clip-text bg-gradient-to-r from-[#e1bac5] via-[#D0C3EC] to-[#D0C3EC] max-w-4xl text-6xl font-bold leading-tight py-4"
+          >
+            Turning complex problems into simple design
+          </div>
+          <div class="flex gap-12 py-12">
+            <div
+              class="flex flex-col justify-center items-center w-[28.7%] p-8 border rounded-[36px] border-[#303033]"
+            >
+              <div
+                class="text-[5rem] leading-none font-bold lining-nums text-[#C7C6D3]"
+              >
+                40+
+              </div>
+              <div class="text-xl font-bold text-[#E9E9F1]">Happy clients</div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[28.7%] p-8 border rounded-[36px] border-[#303033]"
+            >
+              <div
+                class="text-[5rem] leading-none font-bold lining-nums text-[#C7C6D3]"
+              >
+                2+
+              </div>
+              <div class="text-xl font-bold text-[#E9E9F1]">
+                Years of experience
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-[28.7%] p-8 border rounded-[36px] border-[#303033]"
+            >
+              <div
+                class="text-[5rem] leading-none font-bold lining-nums text-[#C7C6D3]"
+              >
+                50+
+              </div>
+              <div class="text-xl font-bold text-[#E9E9F1]">Projects done</div>
+            </div>
+          </div>
+          <div class="flex gap-12 lining-nums">
+            <div class="flex flex-wrap gap-5 w-[61.1%]">
+              <div class="text-[#C7C6D3] text-2xl">
+                I wonder if I've been changed in the night? Let me think. Was I
+                the same when I got up this morning? I almost think I can
+                remember feeling a little different. But if I'm not the same,
+                the
+                <div class="inline-block align-middle overflow-hidden">
+                  <a
+                    class="relative hover:text-white transition-colors duration-300 group"
+                    href=""
+                    >next question
+                    <span
+                      class="absolute inset-x-0 bottom-0 w-[96%] h-[0.2px] bg-gray-600"
+                    ></span>
+                    <span
+                      class="absolute inset-x-0 bottom-0 w-[96%] h-[0.2px] bg-white -translate-x-36 group-hover:translate-x-0 transition-transform duration-300"
+                    ></span>
+                  </a>
+                </div>
+                is 'Who in the world am I?' Ah, that's the great puzzle!
+              </div>
+              <div class="text-[#C7C6D3] text-2xl">
+                Be what you would seem to be - or, if you'd like it put more
+                simply - never imagine yourself not to be otherwise than what it
+                might appear to others that what you were or
+                <div class="inline-block align-middle overflow-hidden">
+                  <a
+                    class="relative hover:text-white transition-colors duration-300 group"
+                    href=""
+                    >might have been
+                    <span
+                      class="absolute inset-x-0 bottom-0 w-[96%] h-[0.2px] bg-gray-600"
+                    ></span>
+                    <span
+                      class="absolute inset-x-0 bottom-0 w-[96%] h-[0.2px] bg-white -translate-x-44 group-hover:translate-x-0 transition-transform duration-300"
+                    ></span>
+                  </a>
+                </div>
+                was not otherwise than what you had been would have appeared to
+                them to be otherwise.
+              </div>
+            </div>
+            <div class="flex flex-col gap-5">
+              <div>
+                <label class="text-[#C7C6D3] text-base" for="">Name</label>
+                <div class="text-[#E9E9F1] text-xl font-bold">Tuan Anh</div>
+              </div>
+              <div>
+                <label class="text-[#C7C6D3] text-base" for="">Phone</label>
+                <div class="text-[#E9E9F1] text-xl font-bold">
+                  +84 349838299
+                </div>
+              </div>
+              <div>
+                <label class="text-[#C7C6D3] text-base" for="">Email</label>
+                <div class="text-[#E9E9F1] text-xl font-bold">
+                  birdiq6996@gmail.com
+                </div>
+              </div>
+              <div>
+                <label class="text-[#C7C6D3] text-base" for="">Location</label>
+                <div class="text-[#E9E9F1] text-xl font-bold">Ha Noi</div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6">
+            <button
+              class="relative flex w-56 h-14 text-center text-xl font-bold cursor-pointer mt-6 box-border rounded-[26px] bg-gradient-to-r from-[#e4b8bf] to-[#cec4ef] hover:scale-105 transition-all duration-300 group overflow-hidden"
+            >
+              <span
+                class="absolute w-full flex flex-nowrap top-1/2 left-[8.5rem] -translate-x-1/2 -translate-y-1/2 group-hover:-top-1/2 transition-all duration-300"
+              >
+                <span>Download CV</span>
+                <img class="w-8" src="./images/icons8-download-64.png" alt="" />
+              </span>
+              <span
+                class="absolute w-full flex flex-nowrap -bottom-14 left-[8.5rem] -translate-x-1/2 -translate-y-1/2 group-hover:-bottom-2 transition-all duration-300"
+              >
+                <span>Download CV</span>
+                <img class="w-8" src="./images/icons8-download-64.png" alt="" />
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <!-- page4 -->
+        <div id="content-page4" class="pt-40 w-[93.4%]">
+          <div
+            class="flex w-36 h-10 text-base font-bold text-[#c7c6d3] border border-[#303033] rounded-[17px] px-4 justify-between items-center"
+          >
+            <img class="w-5" src="./images/icons8-star-24.png" alt="" />
+            <span>Resume</span>
+          </div>
+          <div
+            class="max-w-4xl text-6xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#e1bac5] via-[#D0C3EC] to-[#D0C3EC] py-4"
+          >
+            Education and practical experience
+          </div>
+          <div class="text-[#C7C6D3] text-2xl w-[93.4%] pt-5">
+            Be what you would seem to be - or, if you'd like it put more simply
+            - never imagine yourself not to be otherwise than what it might
+            appear to others that what you were or
+            <div class="inline-block align-middle overflow-hidden">
+              <a
+                class="relative hover:text-white transition-colors duration-300 group"
+                href=""
+                >might have been
+                <span
+                  class="absolute inset-x-0 bottom-0 w-[96%] h-[0.2px] bg-gray-600"
+                ></span>
+                <span
+                  class="absolute inset-x-0 bottom-0 w-[96%] h-[0.2px] bg-white -translate-x-44 group-hover:translate-x-0 transition-transform duration-300"
+                ></span>
+              </a>
+            </div>
+            was not otherwise than what you had been would have appeared to them
+            to be otherwise.
+          </div>
+          <div class="pt-32 pb-8 text-[2.65rem] font-bold text-[#E9E9F1]">
+            My education
+          </div>
+          <div class="flex flex-col gap-9 h-auto lining-nums">
+            <span class="block h-[0.6px] w-full bg-gray-600"></span>
+            <div class="flex justify-between w-full">
+              <div class="text-base text-[#C7C6D3]">2018 - 2019</div>
+              <div>
+                <div class="text-2xl font-bold text-white">
+                  Drawing Concentration
+                </div>
+                <div class="text-base text-[#C7C6D3]">
+                  Course by New York Academy of Art
+                </div>
+              </div>
+              <div class="w-5/12 text-xl text-[#C7C6D3] text-wrap">
+                Intensive drawing courses that present the fundamental
+                principles of drawing.
+              </div>
+            </div>
+            <span class="block h-[0.6px] w-full bg-gray-600"></span>
+            <div class="flex justify-between w-full">
+              <div class="text-base text-[#C7C6D3]">2018 - 2019</div>
+              <div>
+                <div class="text-2xl font-bold text-white">
+                  Drawing Concentration
+                </div>
+                <div class="text-base text-[#C7C6D3]">
+                  Course by New York Academy of Art
+                </div>
+              </div>
+              <div class="w-5/12 text-xl text-[#C7C6D3] text-wrap">
+                Intensive drawing courses that present the fundamental
+                principles of drawing.
+              </div>
+            </div>
+            <span class="block h-[0.6px] w-full bg-gray-600"></span>
+            <div class="flex justify-between w-full">
+              <div class="text-base text-[#C7C6D3]">2018 - 2019</div>
+              <div>
+                <div class="text-2xl font-bold text-white">
+                  Drawing Concentration
+                </div>
+                <div class="text-base text-[#C7C6D3]">
+                  Course by New York Academy of Art
+                </div>
+              </div>
+              <div class="w-5/12 text-xl text-[#C7C6D3] text-wrap">
+                Intensive drawing courses that present the fundamental
+                principles of drawing.
+              </div>
+            </div>
+            <span class="block h-[0.6px] w-full bg-gray-600"></span>
+          </div>
+          <div class="pt-32">
+            <div
+              class="flex w-fit h-10 text-base font-bold text-[#c7c6d3] border border-[#303033] rounded-[17px] px-2 justify-between items-center"
+            >
+              <img class="w-5" src="./images/icons8-star-24.png" alt="" />
+              <span class="pl-3">Testimonials</span>
+            </div>
+            <div
+              class="max-w-4xl text-6xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#e1bac5] via-[#D0C3EC] to-[#D0C3EC] py-4"
+            >
+              Clients say about me
+            </div>
+            <div class="border rounded-[36px] border-[#303033] p-12">
+              <div class="flex gap-5">
+                <div class="w-[6.20rem]">
+                  <img
+                    class="rounded-3xl"
+                    src="images/400x400_t01.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col justify-evenly">
+                  <div class="text-3xl font-bold text-[#E9E9F1]">
+                    Alex Tomato
+                  </div>
+                  <div class="text-[#C7C6D3]">
+                    Brand Manager in Instant Design
+                  </div>
+                  <div class="flex gap-1">
+                    <img src="./images/icons8-star-24.png" alt="" />
+                    <img src="./images/icons8-star-24.png" alt="" />
+                    <img src="./images/icons8-star-24.png" alt="" />
+                    <img src="./images/icons8-star-24.png" alt="" />
+                    <img src="./images/icons8-star-24.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="w-5/6 py-9 text-2xl text-[#C7C6D3]">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud. Dolore magna aliquam.
+                </p>
+              </div>
+              <div
+                class="inline-flex gap-2 text-xl font-bold text-white cursor-pointer group"
+              >
+                Project Page
+                <div class="relative flex overflow-hidden">
+                  <span
+                    class="group-hover:translate-x-12 transition-all duration-300"
+                    ><img src="./images/icons8-arrow-30.png" alt=""
+                  /></span>
+                  <span
+                    class="absolute right-9 group-hover:right-0 transition-all duration-300"
+                    ><img src="./images/icons8-arrow-30.png" alt="" /> aa</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-2 pt-5">
+              <div
+                class="flex justify-center items-center w-[3.75rem] h-[3.75rem] border border-[#56565c] rounded-3xl text-2xl text-white cursor-pointer"
+              >
+                <
+              </div>
+              <div
+                class="flex justify-center items-center w-[3.75rem] h-[3.75rem] border border-[#56565c] rounded-3xl text-2xl text-white cursor-pointer"
+              >
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
